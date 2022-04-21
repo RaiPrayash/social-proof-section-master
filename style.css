@@ -1,0 +1,233 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background:  hsl(0, 0%, 100%);
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background: url(./images/bg-pattern-top-mobile.svg) no-repeat top, url(./images/bg-pattern-bottom-mobile.svg) no-repeat bottom;
+}
+.wraper {
+    margin: 50px 5px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 45px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+}
+span {
+    font-size: 33px;
+}
+
+.heading h1 {
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+    font-size: 32px;
+    padding: 20px;
+}
+.heading p {
+    color: hsl(303, 10%, 53%);
+    text-align: center;
+    text-align: center;
+}
+
+
+.rating {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-row-gap: 15px;
+}
+
+.rating p {
+    color: hsl(300, 43%, 22%);
+    padding: 10px 0 0;
+}
+
+.reviews {
+    background:hsl(300, 24%, 96%);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.report-guru {
+    background: hsl(300, 24%, 96%);
+    padding: 15px;
+    border-radius: 10px;
+}
+.best-tech {
+    background:  hsl(300, 24%, 96%);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-row-gap: 18px;
+}
+.card {
+    background:hsl(300, 43%, 22%);
+    color:hsl(300, 24%, 96%);
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+.about {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.about img {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 25px;
+}
+.paragraph p {
+   font-size: 13px;
+}
+.paragraph p:last-child {
+    color:hsl(333, 80%, 67%);
+}
+.paragraph p:first-child {
+    font-size: 15px;
+}
+.card {
+    font-size: 14px;
+}
+
+/*design for desktop*/
+@media screen and ( min-width: 375px) {
+.container {
+background-image: none;
+}
+  .wraper {
+      width: 80vw;
+      margin: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .heading {
+      grid-column: 1/span 2;
+      width: 30em;
+      margin-right: 130px;
+
+  }
+  .heading h1 {
+      position:relative;
+      left: -22px;
+      font-size: 48px;
+      letter-spacing: -3px;
+      text-align:start;
+  }
+  .heading span {
+      font-size: 50px;
+  }
+  .heading p {
+      text-align: start;
+  }
+  .rating {
+      width: 50vw;
+      grid-column: 3/ span 4;
+  }
+  .images {
+    display: flex;
+    gap: 8px;
+}
+  .reviews {
+      position: relative;
+      top: 40px;
+      left: -47px;
+      width: 450px;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .reviews p {
+     position:relative;
+     top: -5px;
+     right: -5px;
+    }
+    .reviews img {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        right: 35px;
+     }
+  .report-guru {
+    position: relative;
+    top: 20px;
+    width: 450px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+  .report-guru p {
+    position:relative;
+    top: -5px;
+    right: -20px;
+   }
+  .report-guru img {
+    width: 15px;
+   height: 15px;
+   position: relative;
+   right: 20px;
+}
+
+  .best-tech {
+    position: relative;
+    left: 47px;
+    width: 450px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .best-tech p {
+    position:relative;
+    top: -5px;
+    right: -20px;
+   }
+
+  .best-tech img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    right: 20px;
+ } 
+  
+  .cards {
+      width: 80vw;
+      margin:40px 100px 0 0;
+      grid-column: 1/ span 4;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 30px;
+}
+.card:last-child {
+    position: relative;
+    top:30px;
+}
+.card:nth-child(2) {
+    position: relative;
+    top: 15px;
+}
+ 
+}
